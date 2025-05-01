@@ -1,5 +1,5 @@
-import React from 'react'
 import axios from 'axios'
+import React from 'react'
 
 function Resister() {
     const adi=async(e)=>{
@@ -8,7 +8,7 @@ function Resister() {
             name:e.target.name.value,
             age:e.target.age.value
         }
-        await axios.post('http://localhost:3000/users',user)
+        await axios.post('https://crud-live-backend-8hg0.onrender.com/users',user)
         alert("data successfully save")
     }
   return (

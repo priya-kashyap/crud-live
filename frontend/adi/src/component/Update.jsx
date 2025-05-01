@@ -1,5 +1,5 @@
-import React from 'react'
-import axios from 'axios'
+import axios from 'axios';
+import React from 'react';
 function Update() {
     const aa=async(e)=>{
         e.preventDefault()
@@ -7,7 +7,7 @@ function Update() {
         const name=e.target.name.value;
         const age=e.target.age.value;
         const data={name,age}
-        await axios.put(`http://localhost:3000/users/${id}`,data)
+        await axios.put(`https://crud-live-backend-8hg0.onrender.com/users/${id}`,data)
         alert("data update")
     }
 

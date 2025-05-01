@@ -1,10 +1,10 @@
-import React from 'react'
-import axios from 'axios'
+import axios from 'axios';
+import React from 'react';
 function Delete() {
     const aa1=async(e)=>{
         e.preventDefault()
         const id=e.target.id.value;
-        await axios.delete(`http://localhost:3000/users/${id}`)
+        await axios.delete(`https://crud-live-backend-8hg0.onrender.com/users/${id}`)
         alert("data delete")
     }
   return (
